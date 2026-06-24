@@ -40,7 +40,8 @@ body{
   font-family: var(--font-body);
   color: var(--ink);
   background: var(--cream);
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -64,7 +65,7 @@ h1, h2, h3{
 h2{ font-size: clamp(2.4rem, 4vw, 3.1rem); }
 h3{ font-size: 1.55rem; }
 
-p{ margin: 0 0 1rem; font-size: 1.1rem; }
+p{ margin: 0 0 1rem; font-size: 1.25rem; }
 
 .eyebrow{
   font-family: var(--font-body);
@@ -146,7 +147,7 @@ p{ margin: 0 0 1rem; font-size: 1.1rem; }
   object-fit: contain;
 }
 .logo-img-footer{
-  height: 64px;
+  height: 180px;
   filter: brightness(0.92) contrast(1.1);
   border-radius: 4px;
 }
