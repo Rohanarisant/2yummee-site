@@ -572,6 +572,25 @@ p{ margin: 0 0 1rem; font-size: 1.25rem; }
 .footer-social a:hover svg{ color: var(--gold); }
 .footer-copy{ font-size: 0.78rem; color: #8c8273; margin: 1rem 0 0; }
 
+/* =========== Vidéo hero (YouTube) =========== */
+.hero-video{ position: relative; z-index: 2; margin-top: 2.5rem; }
+.video-frame{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--chili-soft);
+  background: var(--ink);
+}
+.video-frame iframe{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* =========== Reveal on scroll =========== */
 .reveal{
   opacity: 0;
