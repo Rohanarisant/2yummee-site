@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Mortier - corps -->
+  <path d="M28 58 C26 80 34 100 60 100 C86 100 94 80 92 58 Z" fill="none" stroke="#2F4A2A" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Mortier - bord supérieur -->
+  <ellipse cx="60" cy="58" rx="32" ry="8" fill="none" stroke="#2F4A2A" stroke-width="3"/>
+
+  <!-- Mortier - base -->
+  <path d="M40 100 L44 108 L76 108 L80 100" fill="none" stroke="#2F4A2A" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="38" y1="108" x2="82" y2="108" stroke="#2F4A2A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Pilon -->
+  <line x1="80" y1="20" x2="58" y2="62" stroke="#2F4A2A" stroke-width="4" stroke-linecap="round"/>
+  <!-- Tête du pilon -->
+  <ellipse cx="56" cy="64" rx="7" ry="5" fill="none" stroke="#2F4A2A" stroke-width="3" transform="rotate(-30 56 64)"/>
+
+  <!-- Contenu mortier - pâte de curry -->
+  <path d="M42 72 C46 68 54 70 60 68 C66 66 74 70 76 74" fill="none" stroke="#C8992C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Feuilles de basilic thaï qui s'envolent -->
+  <path d="M88 38 C94 30 102 34 98 42 C95 48 86 44 88 38Z" fill="#4B6B45" opacity="0.85"/>
+  <line x1="93" y1="34" x2="88" y2="44" stroke="#2F4A2A" stroke-width="1.5"/>
+
+  <path d="M96 56 C104 52 108 58 104 64 C101 68 94 64 96 56Z" fill="#4B6B45" opacity="0.7"/>
+  <line x1="102" y1="54" x2="97" y2="62" stroke="#2F4A2A" stroke-width="1.5"/>
+
+  <!-- Particules d'épices -->
+  <circle cx="74" cy="44" r="2.5" fill="#C1502E" opacity="0.8"/>
+  <circle cx="84" cy="32" r="1.8" fill="#C1502E" opacity="0.6"/>
+  <circle cx="68" cy="36" r="2" fill="#C8992C" opacity="0.7"/>
+
+  <!-- Petites étoiles -->
+  <text x="26" y="46" font-family="Georgia,serif" font-size="10" fill="#C8992C" opacity="0.6">✦</text>
+</svg>

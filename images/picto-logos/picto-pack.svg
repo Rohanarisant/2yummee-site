@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Boîte - face avant -->
+  <path d="M20 60 L20 100 L100 100 L100 60" fill="none" stroke="#2F4A2A" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Boîte - fond -->
+  <path d="M20 100 L60 112 L100 100" fill="none" stroke="#2F4A2A" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Couvercle ouvert gauche -->
+  <path d="M20 60 L10 36 L60 36 L60 60" fill="none" stroke="#2F4A2A" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Couvercle ouvert droit -->
+  <path d="M100 60 L110 36 L60 36 L60 60" fill="none" stroke="#2F4A2A" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Ligne de pliure centrale -->
+  <line x1="60" y1="36" x2="60" y2="60" stroke="#2F4A2A" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- Contenu : tige de citronnelle -->
+  <line x1="46" y1="58" x2="46" y2="22" stroke="#4B6B45" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M46 30 C40 26 38 30 42 32 C44 33 46 32 46 30Z" fill="#4B6B45"/>
+  <path d="M46 40 C52 36 54 40 50 42 C48 43 46 42 46 40Z" fill="#4B6B45"/>
+
+  <!-- Contenu : piment -->
+  <path d="M65 55 C65 40 72 32 70 28" fill="none" stroke="#C1502E" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M70 28 C74 24 76 28 72 30 C69 31 65 30 65 28" fill="#C1502E"/>
+  <path d="M70 28 C68 24 65 24 64 27" fill="none" stroke="#4B6B45" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Contenu : petite boîte d'épices -->
+  <rect x="74" y="44" width="16" height="14" rx="2" fill="none" stroke="#C8992C" stroke-width="2.2"/>
+  <line x1="74" y1="49" x2="90" y2="49" stroke="#C8992C" stroke-width="1.5"/>
+  <text x="82" y="57" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#C8992C">★</text>
+
+  <!-- Étoile déco -->
+  <circle cx="32" cy="80" r="2.5" fill="#C8992C" opacity="0.6"/>
+  <circle cx="88" cy="84" r="2" fill="#C1502E" opacity="0.5"/>
+</svg>
