@@ -17,10 +17,7 @@
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a class="logo" href="#top">
-      <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M32 14c-3 8-12 10-12 20a12 12 0 0 0 24 0c0-10-9-12-12-20z"/>
-      </svg>
-      <span class="logo-word">2yummee</span>
+      <img class="logo-img" src="images/picto-logos/2yummee-logo.jpg" alt="Logo 2yummee">
     </a>
 
     <nav class="main-nav" id="main-nav">
@@ -87,15 +84,15 @@
 
     <ul class="concept-list">
       <li>
-        <svg class="concept-icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-wok"/></svg>
+        <img class="concept-icon" src="images/picto-logos/pad-thai-surang.png" alt="" aria-hidden="true">
         <span>Des repas cuisinés chez vous par une cheffe asiatique</span>
       </li>
       <li>
-        <svg class="concept-icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-box"/></svg>
+        <img class="concept-icon" src="images/picto-logos/green-curry-freepik.png" alt="" aria-hidden="true">
         <span>Des box prêtes à cuisiner avec ingrédients et recettes</span>
       </li>
       <li>
-        <svg class="concept-icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-pot"/></svg>
+        <img class="concept-icon" src="images/picto-logos/spicy-food-justicon.png" alt="" aria-hidden="true">
         <span>Des ateliers culinaires pour apprendre à faire vous-même vos plats préférés</span>
       </li>
     </ul>
@@ -117,7 +114,10 @@
     <div class="service-grid">
 
       <article class="service-card">
-        <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-wok"/></svg>
+        <div class="service-photo">
+          <img src="images/service-chef-domicile.jpg" alt="La cheffe Tjiana cuisinant à domicile" loading="lazy">
+        </div>
+        <img class="service-icon" src="images/picto-logos/pad-thai-surang.png" alt="" aria-hidden="true">
         <h3>Chef à domicile</h3>
         <p>Transformez votre cuisine en véritable restaurant asiatique! Je viens cuisiner chez vous, avec mes produits frais et mes recettes authentiques de Thaïlande, du Vietnam, de Corée ou du Japon. Un vrai moment de partage, de convivialité et de découverte.</p>
         <p class="service-note">Idéal pour un dîner en amoureux, une soirée entre amis ou un événement spécial.</p>
@@ -125,7 +125,10 @@
       </article>
 
       <article class="service-card">
-        <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-box"/></svg>
+        <div class="service-photo">
+          <img src="images/service-packs.jpg" alt="Pack 2yummee prêt-à-cuisiner avec ingrédients et épices" loading="lazy">
+        </div>
+        <img class="service-icon" src="images/picto-logos/green-curry-freepik.png" alt="" aria-hidden="true">
         <h3>Packs prêts-à-cuisiner</h3>
         <p>Vous aimez cuisiner mais manquez parfois de temps ou d'inspiration? Nos Packs 2yummee contiennent tout ce qu'il faut&nbsp;:</p>
         <ul class="service-list">
@@ -138,7 +141,10 @@
       </article>
 
       <article class="service-card">
-        <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-pot"/></svg>
+        <div class="service-photo">
+          <img src="images/service-cours-cuisine.jpg" alt="Cours de cuisine asiatique en petit groupe" loading="lazy">
+        </div>
+        <img class="service-icon" src="images/picto-logos/spicy-food-justicon.png" alt="" aria-hidden="true">
         <h3>Cours de cuisine à domicile</h3>
         <p>Apprenez à réaliser des plats asiatiques typiques dans une ambiance conviviale et chaleureuse&nbsp;:</p>
         <ul class="service-list">
@@ -155,43 +161,48 @@
 </section>
 
 <!-- ============ GALERIE ============ -->
-<section class="section section-cream gallery">
+<section class="section section-cream gallery" id="galerie">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow eyebrow-dark">En images</p>
       <h2>Un avant-goût du voyage</h2>
+      <p class="section-lead">Clique sur une photo pour l'agrandir.</p>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="images/plat-1.jpg" alt="Pad Thaï maison" loading="lazy">
-        <p class="photo-caption">Pad Thaï — à remplacer</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/plat-2.jpg" alt="Rouleaux de printemps vietnamiens" loading="lazy">
-        <p class="photo-caption">Rouleaux de printemps — à remplacer</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/plat-3.jpg" alt="Curry thaï rouge" loading="lazy">
-        <p class="photo-caption">Curry rouge — à remplacer</p>
-      </div>
-    </div>
+    <div class="gallery-grid" id="gallery-grid"><!-- généré par script.js --></div>
   </div>
 </section>
 
+<!-- Lightbox (plein écran) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Photo précédente">&#8249;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Photo suivante">&#8250;</button>
+</div>
+
 <!-- ============ ESPRIT / HISTOIRE ============ -->
 <section class="section section-dark" id="histoire">
-  <div class="container histoire-inner">
-    <p class="eyebrow eyebrow-light">L'esprit 2yummee</p>
-    <h2 class="histoire-title">Un pont entre mes racines et votre table</h2>
+  <div class="container histoire-grid">
 
-    <div class="histoire-text">
-      <p>Depuis toujours, je rêve de créer un pont entre mes racines asiatiques et ma passion pour la cuisine. Pas seulement en préparant des plats, mais en offrant une véritable expérience&nbsp;: celle de savourer, chez soi, le goût authentique de l'Asie, sans les contraintes du quotidien.</p>
-      <p>Comme beaucoup d'entre vous, je cuisine chaque jour — par plaisir, par amour, par nécessité aussi. Mais soyons honnêtes&nbsp;: même lorsqu'on aime ça, il y a des soirs où l'on rêve de mettre les pieds sous la table sans rien devoir gérer.</p>
-      <p>Au-delà de la cuisine, 2yummee est une invitation à voyager autrement. Chaque plat, chaque épice raconte une histoire&nbsp;: celle d'un souvenir, d'un geste transmis, d'un parfum d'ailleurs. C'est une expérience qui nourrit autant le corps que l'âme — et qui se partage autour d'une table.</p>
+    <div class="histoire-media">
+      <img class="histoire-img histoire-img-main" src="images/esprit-tjiana.jpg" alt="Tjiana, fondatrice de 2yummee" loading="lazy">
+      <img class="histoire-img histoire-img-accent" src="images/esprit-jardin.jpg" alt="Jardin d'épices et d'herbes aromatiques de 2yummee" loading="lazy">
     </div>
 
-    <p class="histoire-signature">2yummee — Le vrai voyage commence dans la cuisine.</p>
-    <a href="#contact" class="btn btn-primary">Contactez-nous</a>
+    <div class="histoire-content">
+      <p class="eyebrow eyebrow-light">L'esprit 2yummee</p>
+      <h2 class="histoire-title">Un pont entre mes racines et votre table</h2>
+
+      <div class="histoire-text">
+        <p>Depuis toujours, je rêve de créer un pont entre mes racines asiatiques et ma passion pour la cuisine. Pas seulement en préparant des plats, mais en offrant une véritable expérience&nbsp;: celle de savourer, chez soi, le goût authentique de l'Asie, sans les contraintes du quotidien.</p>
+        <p>Comme beaucoup d'entre vous, je cuisine chaque jour — par plaisir, par amour, par nécessité aussi. Mais soyons honnêtes&nbsp;: même lorsqu'on aime ça, il y a des soirs où l'on rêve de mettre les pieds sous la table sans rien devoir gérer.</p>
+        <p>Au-delà de la cuisine, 2yummee est une invitation à voyager autrement. Chaque plat, chaque épice raconte une histoire&nbsp;: celle d'un souvenir, d'un geste transmis, d'un parfum d'ailleurs. C'est une expérience qui nourrit autant le corps que l'âme — et qui se partage autour d'une table.</p>
+      </div>
+
+      <p class="histoire-signature">2yummee — Le vrai voyage commence dans la cuisine.</p>
+      <a href="#contact" class="btn btn-primary">Contactez-nous</a>
+    </div>
+
   </div>
 </section>
 
@@ -240,8 +251,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <a class="logo logo-footer" href="#top">
-      <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 14c-3 8-12 10-12 20a12 12 0 0 0 24 0c0-10-9-12-12-20z"/></svg>
-      <span class="logo-word">2yummee</span>
+      <img class="logo-img logo-img-footer" src="images/picto-logos/2yummee-logo.jpg" alt="Logo 2yummee">
     </a>
     <p class="footer-tagline">Le vrai voyage commence dans la cuisine.</p>
 
